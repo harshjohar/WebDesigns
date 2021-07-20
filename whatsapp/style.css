@@ -249,6 +249,7 @@ main {
     display: flex;
     flex-direction: column;
     color: white;
+    overflow-y: scroll;
 }
 
 .event {
@@ -398,22 +399,22 @@ main {
 .chat-msg .bubble .bubble-arrow.alt {
     bottom: 20px;
     left: auto;
-    right: 4px;
+    right: 12px;
     float: right;
 }
 
 .chat-msg .bubble .bubble-arrow:after {
     content: "";
     position: absolute;
-    border-top: 15px solid var(--color-recd);
-    border-left: 15px solid transparent;
+    border-top: 20px solid var(--color-recd);
+    border-left: 20px solid transparent;
     border-radius: 4px 0 0 0px;
     width: 0;
     height: 0;
 }
 
 .chat-msg .bubble .bubble-arrow.alt:after {
-    border-top: 15px solid var(--color-sent);
+    border-top: 20px solid var(--color-sent);
     transform: scaleX(-1);
 }
 
@@ -422,7 +423,7 @@ main {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -430,7 +431,9 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(100, 99, 99);
+    background: rgb(51, 51, 51);
+    border-radius: 20px;
+    border: 2px solid rgb(51, 51, 51);
 }
 
 ::-webkit-scrollbar-thumb:hover {
