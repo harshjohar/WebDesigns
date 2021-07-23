@@ -30,7 +30,7 @@ body {
 .data {
     display: flex;
     flex-direction: row;
-
+    max-width: 1500px;
 }
 
 .chat-left {
@@ -438,4 +438,9 @@ main {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+.green-typing-msg {
+    font-weight: 1000;
+    color: #ea00ff;
 }
