@@ -1,3 +1,83 @@
 body {
-    background: red;
+    background-color: #2a2f32;
+}
+
+.data {
+    width: 100%;
+    border: 4px solif green;
+}
+
+.chat-left {
+    width: 100vw;
+    height: 100vh;
+    /* margin: 0; */
+}
+
+.left-top {
+    height: 8vh;
+}
+
+.profile-pic-mine {
+    display: none;
+}
+
+.phone-title {
+    display: inline;
+    color: aliceblue;
+    font-size: 1.4rem;
+    margin: 1rem 1rem;
+}
+
+.options {
+    display: none;
+}
+
+.options-phone {
+    display: flex;
+    margin-right: 1rem;
+    margin-left: auto;
+    color: aliceblue;
+}
+
+.phone-opt-item {
+    margin: 1rem;
+}
+
+.search {
+    display: none;
+}
+
+.phone-sections {
+    display: flex;
+    height: 7vh;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2f32;
+    margin: none;
+}
+
+.phone-subheading {
+    width: 30%;
+    margin-left: 1rem;
+    text-align: center;
+    /* margin-top: 1rem; */
+}
+
+#camera {
+    width: 7%;
+}
+
+#active-opt {
+    padding: 12px;
+    border-bottom: 2px solid white;
+}
+
+main {
+    display: none;
+}
+
+.chat .profile-pic img {
+    height: 3rem;
+    width: 3rem;
 }
