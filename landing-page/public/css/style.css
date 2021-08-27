@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .navbar {
@@ -49,6 +50,9 @@
     color: white;
     font-size: 2rem;
     cursor: pointer;
+    margin-right: 1rem;
+    margin-left: auto;
+    display: none;
 }
 
 .hamburger:focus {
@@ -380,10 +384,101 @@
     }
 }
 
-@media (max-width : 580px) {
+@media (max-width : 600px) {
     .section1, .section2, .section3 {
         flex-direction: column;
         margin: 0;
         padding: 0;
+        height: 100%;
+        align-items: center;
+    }
+
+    .text-sect {
+        padding: 3rem 1rem;
+        width: 100%;
+        padding-top: 10rem;
+    }
+    .section1 .text-sect .description {
+        color: rgb(151, 116, 1);
+    }
+    .section1 .text-sect{
+        background: url("../images/desktop/image-transform.jpg");
+    }
+
+    .section2 .text-sect .description {
+        color: rgb(151, 1, 1);
+    }
+    .section2 .text-sect{
+        background: url("../images/desktop/image-stand-out.jpg");
+    }
+
+    .img-sect {
+        width: 100%;
+        height: 60%;
+        display: none;
+    }
+    
+    .img-left, .img-right {
+        width: 100%;
+    }
+
+    .text-in-img {
+        padding: 1rem;
+    }
+
+    .banner {
+        width: 100%;
+        background-size: cover;
+        /* background:fixed; */
+    
+    }
+
+    .title-testinomials {
+        margin-top: 5rem;
+    }
+
+    .users {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:590px) {
+    .navbar {
+        display: none;
+        width: 100%;
+        background-color: aliceblue;
+        border-radius: 2rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .navul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .navul li {
+        color: hsl(212, 27%, 19%);
+    }
+
+    .navbar-footer {
+        display: none;
+    }
+}    
+
+@media (max-width:390px) {
+    .title-testinomials {
+        letter-spacing: normal;
+    }
+
+    .text-banner {
+        font-size: 1.2rem;
+        text-align: center;
     }
 }
